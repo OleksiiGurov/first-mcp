@@ -11,10 +11,10 @@ def add(a: int, b: int) -> int:
     return a + b
 
 
-@mcp.prompt
+@mcp.tool
 def greet(name: str) -> str:
-    """Generate a friendly greeting prompt for the given name."""
-    return f"Say a warm, one-sentence hello to {name}."
+    """Return a friendly one-sentence greeting for the given name."""
+    return f"Hello, {name}! Great to see you."
 
 
 if __name__ == "__main__":
